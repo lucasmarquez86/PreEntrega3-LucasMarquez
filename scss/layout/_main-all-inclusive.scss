@@ -1,0 +1,32 @@
+/*ALL INCLUSIVE*/
+
+.slidePrincipalAllinclusive {
+    @include banners(url("../assets/img/Rectangle-all.png"))
+}
+
+.caracteristicas {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2.5rem 0;
+}
+
+.iconText {
+    padding: 2rem 20px;
+}
+
+.titulos {
+    text-align: center;
+    font-family: 'Ultra', serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+    }
+}
+
+.galeria {
+    padding: 2rem;
+
+}

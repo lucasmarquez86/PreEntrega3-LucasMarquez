@@ -1,0 +1,47 @@
+    /*****HEADER*****/
+    .navbar {
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $color-secundario;
+            }
+        }
+    }
+
+    .bg-nav {
+        background-color: $background-principal;
+        font-family: 'Roboto', sans-serif;
+        color: $color-secundario;
+        font-weight: 300;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .nav-link:hover {
+        color: #678983;
+    }
+
+    .navbar-nav {
+        column-gap: 3em;
+        width: 80%;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .show>.nav-link {
+        color: #E6DDC4;
+    }
+
+    .navbar-toggler {
+        background-color: #678983;
+    }
+
+    .botonHeader {
+        text-decoration: none;
+        color: $color-secundario;
+    }
+
+    input::placeholder {
+        color: $color-secundario;
+    }

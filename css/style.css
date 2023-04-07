@@ -1,0 +1,705 @@
+/* Variables */
+/* Tipografias */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;700;900&family=Ultra&display=swap");
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*****HEADER*****/
+.navbar li {
+  list-style: none; }
+  .navbar li a {
+    text-decoration: none;
+    color: #f5f5f5; }
+
+.bg-nav {
+  background-color: #181D31;
+  font-family: 'Roboto', sans-serif;
+  color: #f5f5f5;
+  font-weight: 300;
+  font-size: 1rem;
+  width: 100%; }
+
+.nav-link:hover {
+  color: #678983; }
+
+.navbar-nav {
+  column-gap: 3em;
+  width: 80%; }
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #E6DDC4; }
+
+.navbar-toggler {
+  background-color: #678983; }
+
+.botonHeader {
+  text-decoration: none;
+  color: #f5f5f5; }
+
+input::placeholder {
+  color: #f5f5f5; }
+
+main {
+  font-family: 'Roboto', sans-serif; }
+
+/*****BANNER PRINCIPAL*****/
+.slidePrincipal {
+  display: grid;
+  background-image: url("../assets/img/slide1.jpg");
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  text-shadow: 2px 2px 5px #181D31;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr); }
+  .slidePrincipal .textSlide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    padding: 2rem; }
+    .slidePrincipal .textSlide h1 {
+      font-family: 'Ultra', serif;
+      font-size: 3rem;
+      color: #f5f5f5;
+      text-align: center;
+      font-weight: 100; }
+    .slidePrincipal .textSlide h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      color: #f5f5f5;
+      text-align: center;
+      font-weight: 100; }
+
+button {
+  background-color: #181D31;
+  font-family: 'Roboto', sans-serif;
+  color: #f5f5f5;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 4px;
+  border: #678983;
+  margin: auto; }
+
+.buttonDos {
+  background-color: #678983;
+  font-family: 'Roboto', sans-serif;
+  color: #f5f5f5;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 4px;
+  border: #678983;
+  margin: 20px 0; }
+  .buttonDos a {
+    text-decoration: none;
+    color: #E6DDC4; }
+
+a {
+  text-decoration: none;
+  color: #f5f5f5; }
+
+/*****Reservas*****/
+.reservas {
+  display: flex;
+  justify-content: center;
+  background-color: #181D31;
+  font-family: 'Roboto', sans-serif;
+  color: #f5f5f5;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 80px;
+  text-align: center; }
+  .reservas form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .reservas form label {
+      padding: 10px 20px;
+      justify-content: center; }
+      .reservas form label input {
+        background-color: #678983;
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 4px;
+        border: #678983; }
+
+.enviar {
+  background-color: #E6DDC4;
+  font-family: 'Roboto', sans-serif;
+  color: #181D31;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px 40px;
+  border-radius: 4px;
+  border: #678983; }
+  .enviar:hover {
+    background-color: #678983; }
+
+/*****Accesos*****/
+.accesos {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem; }
+
+.accesoBoxUno, .accesoBoxDos, .accesoBoxTres {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url("../assets/img/suites.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center bottom;
+  padding: 20px;
+  min-height: 500px;
+  margin-bottom: 1rem; }
+  .accesoBoxUno div, .accesoBoxDos div, .accesoBoxTres div {
+    background-color: rgba(255, 228, 196, 0.7);
+    padding: 1rem 0;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    align-self: center; }
+    .accesoBoxUno div h3, .accesoBoxDos div h3, .accesoBoxTres div h3 {
+      font-family: 'Ultra', serif;
+      font-size: 2rem;
+      font-weight: 100;
+      text-align: center;
+      padding: 1rem 0; }
+
+.accesoBoxDos {
+  background-image: url("../assets/img/resto.jpg"); }
+
+.accesoBoxTres {
+  background-image: url("../assets/img/eventos.jpg"); }
+
+/*****Home Inclusive*****/
+.inclusive {
+  display: flex;
+  background-color: #678983;
+  width: 100%;
+  padding: 5rem; }
+
+.divI {
+  width: 100%;
+  height: max-content; }
+
+.textInclusive {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  line-height: 1.5em;
+  color: #f5f5f5; }
+  .textInclusive h2 {
+    font-family: 'Ultra', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 100; }
+
+/******Footer******/
+.footerPrincipal {
+  display: flex;
+  justify-content: space-around;
+  background-color: #181D31;
+  font-family: 'Roboto', sans-serif;
+  color: #f5f5f5;
+  font-size: 1em;
+  width: 100%;
+  align-items: center; }
+
+.footerUno {
+  padding: 20px; }
+
+.footerDos {
+  padding: 20px; }
+  .footerDos ul {
+    text-decoration: none; }
+    .footerDos ul li {
+      list-style: none; }
+
+.footerTres {
+  padding: 20px; }
+  .footerTres ul {
+    text-decoration: none; }
+    .footerTres ul li {
+      list-style: none; }
+
+.footerCuatro {
+  width: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
+.copyright {
+  background-color: #678983;
+  text-align: center;
+  color: #181D31;
+  font-size: 12px;
+  padding: 15px;
+  font-family: 'Roboto'; }
+
+/*******Aside*******/
+.chatWhatsapp {
+  position: fixed;
+  right: 0;
+  width: 90px;
+  bottom: 0;
+  z-index: 1000;
+  margin-right: 10px;
+  margin-bottom: 30px; }
+  .chatWhatsapp img {
+    width: 100%; }
+
+/*ALL INCLUSIVE*/
+.slidePrincipalAllinclusive {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/img/Rectangle-all.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  background-position: center; }
+  .slidePrincipalAllinclusive h2 {
+    font-family: 'Ultra', serif;
+    font-size: 2em;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 5px #181D31; }
+
+.caracteristicas {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2.5rem 0; }
+
+.iconText {
+  padding: 2rem 20px; }
+
+.titulos {
+  text-align: center;
+  font-family: 'Ultra', serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  .titulos p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px; }
+
+.galeria {
+  padding: 2rem; }
+
+/*EVENTOS*/
+.slidePrincipalEventos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/img/Rectangle-eventos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  background-position: center; }
+  .slidePrincipalEventos h2 {
+    font-family: 'Ultra', serif;
+    font-size: 2em;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 5px #181D31; }
+
+.gridCard {
+  display: grid;
+  margin: 80px auto;
+  width: 100%;
+  height: 700px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  padding: 2.5rem; }
+
+.gridCardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-column: 2/span 8;
+  grid-row: 1/span 7; }
+
+.textEvent {
+  background-color: #678983;
+  padding: 2.5rem;
+  border: 6px solid #fff;
+  grid-column: 7/span 5;
+  grid-row: 3/span 3; }
+
+.gridCardImg2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-column: 4/span 8;
+  grid-row: 1/span 7; }
+
+.textEvent2 {
+  background-color: #678983;
+  padding: 2.5rem;
+  border: 6px solid #fff;
+  grid-column: 2/span 5;
+  grid-row: 3/span 3; }
+
+.tituloEvent {
+  font-size: 2rem;
+  margin-bottom: 16px; }
+
+.parrafoEvent {
+  line-height: 1.5; }
+
+/*RESTOS*/
+.slidePrincipalRestos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/img/Rectangle-resto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  background-position: center; }
+  .slidePrincipalRestos h2 {
+    font-family: 'Ultra', serif;
+    font-size: 2em;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 5px #181D31; }
+
+.RestosUno {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/img/Rectangleresto1b.png"); }
+  .RestosUno div {
+    text-align: center; }
+    .RestosUno div h2 {
+      color: #f5f5f5;
+      text-shadow: 2px 2px 5px #181D31;
+      font-family: 'Ultra', serif;
+      font-size: 2rem; }
+  .RestosUno:hover {
+    background-image: url("../assets/img/Rectangleresto1.png"); }
+
+.RestosDos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/img/Rectangleresto4b.png"); }
+  .RestosDos div {
+    text-align: center; }
+    .RestosDos div h2 {
+      color: #f5f5f5;
+      text-shadow: 2px 2px 5px #181D31;
+      font-family: 'Ultra', serif;
+      font-size: 2rem; }
+  .RestosDos:hover {
+    background-image: url("../assets/img/Rectangleresto4.png"); }
+
+.RestosTres {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/img/Rectangleresto3b.png"); }
+  .RestosTres div {
+    text-align: center; }
+    .RestosTres div h2 {
+      color: #f5f5f5;
+      text-shadow: 2px 2px 5px #181D31;
+      font-family: 'Ultra', serif;
+      font-size: 2rem; }
+  .RestosTres:hover {
+    background-image: url("../assets/img/Rectangleresto2.png"); }
+
+.RestosCuatro {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/img/Rectangleresto2b.png"); }
+  .RestosCuatro div {
+    text-align: center; }
+    .RestosCuatro div h2 {
+      color: #f5f5f5;
+      text-shadow: 2px 2px 5px #181D31;
+      font-family: 'Ultra', serif;
+      font-size: 2rem; }
+  .RestosCuatro:hover {
+    background-image: url("../assets/img/Rectangleresto3.png"); }
+
+/*SUITES*/
+.slidePrincipalSuites {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/img/Rectangle-suites.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  background-position: center; }
+  .slidePrincipalSuites h2 {
+    font-family: 'Ultra', serif;
+    font-size: 2em;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 5px #181D31; }
+
+.formAlign {
+  display: flex;
+  align-items: flex-end; }
+
+.textSuites h2 {
+  font-family: 'Ultra', serif;
+  font-size: 2rem; }
+
+.textSuites p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem; }
+
+.precioSuites h2 {
+  font-family: 'Ultra', serif;
+  font-size: 2rem; }
+
+.precioSuites p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem; }
+
+/*********RESPONSIVE 768px********/
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center; }
+  .accesos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 2rem; }
+  .containerHeader {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px; }
+  .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .accesos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 2rem; }
+  .inclusive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #678983;
+    width: 100%;
+    padding: 1rem; }
+  .divI {
+    width: 100%; }
+  .footerPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #181D31;
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5;
+    font-size: 1em;
+    width: 100%;
+    align-items: center; }
+  .footerUno {
+    padding: 20px;
+    width: 100%;
+    text-align: center; }
+  .footerDos {
+    padding: 20px;
+    width: 100%;
+    text-align: center; }
+  .footerTres {
+    padding: 20px;
+    width: 100%;
+    text-align: center; }
+  .footerCuatro {
+    padding: 20px;
+    width: 100%; }
+  .RestosUno {
+    background-image: url("../assets/img/Rectangleresto1.png");
+    background-size: cover;
+    height: 300px; }
+  .RestosDos {
+    background-image: url("../assets/img/Rectangleresto4.png");
+    height: 300px;
+    background-size: cover; }
+  .RestosTres {
+    background-image: url("../assets/img/Rectangleresto2.png");
+    height: 300px;
+    background-size: cover; }
+  .RestosCuatro {
+    background-image: url("../assets/img/Rectangleresto3.png");
+    height: 300px;
+    background-size: cover; }
+  .gridCard {
+    margin: 10px auto;
+    padding: 1rem;
+    height: auto; }
+  .gridCardImg {
+    grid-column: 1/13;
+    grid-row: 1/5; }
+  .textEvent {
+    padding: 1rem;
+    grid-column: 1/13;
+    grid-row: 5/7;
+    border: 0;
+    margin-top: 10px; }
+  .gridCardImg2 {
+    grid-column: 1/13;
+    grid-row: 1/5; }
+  .textEvent2 {
+    padding: 1rem;
+    grid-column: 1/13;
+    grid-row: 5/7;
+    border: 0;
+    margin-top: 10px; }
+  .precioSuites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 100%; } }
+
+/*********RESPONSIVE 320px********/
+@media (max-width: 320px) {
+  .textSlide h1 {
+    font-size: 2rem; }
+  .accesos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .inclusive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #678983;
+    width: 100%;
+    padding: 1rem; }
+  .divI {
+    width: 100%; }
+  .footerPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #181D31;
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5;
+    font-size: 1em;
+    width: 100%;
+    align-items: center; }
+  .footerUno {
+    padding: 20px;
+    width: 100%;
+    text-align: center; }
+  .footerDos {
+    padding: 20px;
+    width: 100%;
+    text-align: center; }
+  .footerTres {
+    padding: 20px;
+    width: 100%;
+    text-align: center; }
+  .footerCuatro {
+    padding: 20px;
+    width: 100%; }
+  .RestosUno {
+    background-image: url("../assets/img/Rectangleresto1.png");
+    background-size: cover;
+    height: 300px; }
+  .RestosDos {
+    background-image: url("../assets/img/Rectangleresto4.png");
+    height: 300px;
+    background-size: cover; }
+  .RestosTres {
+    background-image: url("../assets/img/Rectangleresto2.png");
+    height: 300px;
+    background-size: cover; }
+  .RestosCuatro {
+    background-image: url("../assets/img/Rectangleresto3.png");
+    height: 300px;
+    background-size: cover; }
+  .gridCard {
+    margin: 10px auto;
+    padding: 1rem;
+    height: auto; }
+  .gridCardImg {
+    grid-column: 1/13;
+    grid-row: 1/5; }
+  .textEvent {
+    padding: 1rem;
+    grid-column: 1/13;
+    grid-row: 5/7;
+    border: 0;
+    margin-top: 10px; }
+  .gridCardImg2 {
+    grid-column: 1/13;
+    grid-row: 1/5; }
+  .textEvent2 {
+    padding: 1rem;
+    grid-column: 1/13;
+    grid-row: 5/7;
+    border: 0;
+    margin-top: 10px; }
+  .precioSuites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }

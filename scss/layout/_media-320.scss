@@ -1,0 +1,129 @@
+/*********RESPONSIVE 320px********/
+
+@media (max-width: 320px) {
+
+    .textSlide h1 {
+        font-size: 2rem;
+    }
+
+    .accesos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .inclusive {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: $background-secundario;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .divI {
+        width: 100%;
+    }
+
+    .footerPrincipal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $background-principal;
+        font-family: 'Roboto', sans-serif;
+        color: $color-secundario;
+        font-size: 1em;
+        width: 100%;
+        align-items: center;
+    }
+
+    .footerUno {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerDos {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerTres {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerCuatro {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .RestosUno {
+        background-image: url("../assets/img/Rectangleresto1.png");
+        background-size: cover;
+        height: 300px;
+    }
+
+    .RestosDos {
+        background-image: url("../assets/img/Rectangleresto4.png");
+        height: 300px;
+        background-size: cover;
+    }
+
+    .RestosTres {
+        background-image: url("../assets/img/Rectangleresto2.png");
+        height: 300px;
+        background-size: cover;
+    }
+
+    .RestosCuatro {
+        background-image: url("../assets/img/Rectangleresto3.png");
+        height: 300px;
+        background-size: cover;
+    }
+
+    .gridCard {
+        margin: 10px auto;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .gridCardImg {
+        grid-column: 1/13;
+        grid-row: 1/5;
+    }
+
+    .textEvent {
+        padding: 1rem;
+        grid-column: 1/13;
+        grid-row: 5/7;
+        border: 0;
+        margin-top: 10px;
+    }
+
+    .gridCardImg2 {
+        grid-column: 1/13;
+        grid-row: 1/5;
+    }
+
+    .textEvent2 {
+        padding: 1rem;
+        grid-column: 1/13;
+        grid-row: 5/7;
+        border: 0;
+        margin-top: 10px;
+    }
+
+    .precioSuites {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}

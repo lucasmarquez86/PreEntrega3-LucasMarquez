@@ -1,0 +1,76 @@
+/******Footer******/
+
+.footerPrincipal {
+    display: flex;
+    justify-content: space-around;
+    background-color: $background-principal;
+    font-family: 'Roboto', sans-serif;
+    color: $color-secundario;
+    font-size: 1em;
+    width: 100%;
+    align-items: center;
+
+}
+
+.footerUno {
+    padding: 20px;
+}
+
+.footerDos {
+    padding: 20px;
+
+    ul {
+        text-decoration: none;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.footerTres {
+    padding: 20px;
+
+    ul {
+        text-decoration: none;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.footerCuatro {
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    background-color: $background-secundario;
+    text-align: center;
+    color: #181D31;
+    font-size: 12px;
+    padding: 15px;
+    font-family: 'Roboto';
+}
+
+/*******Aside*******/
+
+.chatWhatsapp {
+    position: fixed;
+    right: 0;
+    width: 90px;
+    bottom: 0;
+    z-index: 1000;
+    margin-right: 10px;
+    margin-bottom: 30px;
+
+    img {
+        width: 100%;
+    }
+}
+
+

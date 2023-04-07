@@ -1,0 +1,34 @@
+/*SUITES*/
+
+.slidePrincipalSuites {
+    @include banners(url("../assets/img/Rectangle-suites.png"))
+    
+}
+
+.formAlign {
+    display: flex;
+    align-items: flex-end;
+}
+
+.textSuites{
+    h2 {
+        font-family: 'Ultra', serif;
+        font-size: 2rem;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+
+} 
+
+.precioSuites{
+    h2 {
+        font-family: 'Ultra', serif;
+        font-size: 2rem;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+} 

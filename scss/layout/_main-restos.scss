@@ -1,0 +1,24 @@
+/*RESTOS*/
+
+.slidePrincipalRestos {
+    @include banners(url("../assets/img/Rectangle-resto.png"));
+}
+
+
+.RestosUno {
+    @include restos (url("../assets/img/Rectangleresto1b.png"), url("../assets/img/Rectangleresto1.png"))
+}
+
+.RestosDos {
+    @include restos (url("../assets/img/Rectangleresto4b.png"), url("../assets/img/Rectangleresto4.png"))
+}
+
+
+.RestosTres {
+    @include restos (url("../assets/img/Rectangleresto3b.png"), url("../assets/img/Rectangleresto2.png"))
+}
+
+
+.RestosCuatro {
+    @include restos (url("../assets/img/Rectangleresto2b.png"), url("../assets/img/Rectangleresto3.png"))
+}

@@ -1,0 +1,17 @@
+{
+  "name": "51870-lucasmarquez-main",
+  "version": "1.0.0",
+  "description": "Link de repositorio: https://github.com/lucasmarquez86/51870-LucasMarquez.git Todos son Responsive. En eventos.html utilice Bootstrap + Flexbox + Grids En index.html y restaurantes.html utilice Flebox + Grids En all-inclusive.html y suites.html utilice Bootstrap + Flexbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
